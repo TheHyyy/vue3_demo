@@ -19,14 +19,22 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, watchEffect, computed } from "vue";
 import { useMouse } from "../utils/mouse";
 let { x, y } = useMouse();
 let { title, todos, addTodo, clear, active, all, allDone } = useTodos();
 
+function useStorage(name, value = []) {
+  let data = ref(JSON.parse(localStorage.getItem(name) || value));
+  watchEffect(() => {
+    localStorage.setItem(name, JSON.stringify(data.value));
+  });
+  return data;
+}
+
 function useTodos() {
   let title = ref("");
-  let todos = ref([{ title: "哥们是来学习Vue3的", done: false }]);
+  let todos = useStorage("storageTodos");
 
   function addTodo() {
     todos.value.push({
@@ -38,7 +46,6 @@ function useTodos() {
   function clear() {
     todos.value = todos.value.filter((item) => !item.done);
   }
-
   let all = computed(() => todos.value.length);
   let active = computed(() => todos.value.filter((item) => item.done).length);
   let allDone = computed({

@@ -7,6 +7,11 @@
   "resolved" "https://registry.npmmirror.com/@babel/parser/-/parser-7.18.9.tgz"
   "version" "7.18.9"
 
+"@types/web-bluetooth@^0.0.15":
+  "integrity" "sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA=="
+  "resolved" "https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.15.tgz"
+  "version" "0.0.15"
+
 "@vitejs/plugin-vue@^3.0.0":
   "integrity" "sha512-Ll9JgxG7ONIz/XZv3dssfoMUDu9qAnlJ+km+pBA0teYSXzwPCIzS/e1bmwNYl5dcQGs677D21amgfYAnzMl17A=="
   "resolved" "https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-3.0.1.tgz"
@@ -106,6 +111,28 @@
   "integrity" "sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw=="
   "resolved" "https://registry.npmmirror.com/@vue/shared/-/shared-3.2.37.tgz"
   "version" "3.2.37"
+
+"@vueuse/core@^9.1.1":
+  "integrity" "sha512-QfuaNWRDMQcCUwXylCyYhPC3ScS9Tiiz4J0chdwr3vOemBwRToSywq8MP+ZegKYFnbETzRY8G/5zC+ca30wrRQ=="
+  "resolved" "https://registry.npmmirror.com/@vueuse/core/-/core-9.1.1.tgz"
+  "version" "9.1.1"
+  dependencies:
+    "@types/web-bluetooth" "^0.0.15"
+    "@vueuse/metadata" "9.1.1"
+    "@vueuse/shared" "9.1.1"
+    "vue-demi" "*"
+
+"@vueuse/metadata@9.1.1":
+  "integrity" "sha512-XZ2KtSW+85LLHB/IdGILPAtbIVHasPsAW7aqz3BRMzJdAQWRiM/FGa1OKBwLbXtUw/AmjKYFlZJo7eOFIBXRog=="
+  "resolved" "https://registry.npmmirror.com/@vueuse/metadata/-/metadata-9.1.1.tgz"
+  "version" "9.1.1"
+
+"@vueuse/shared@9.1.1":
+  "integrity" "sha512-c+IfcOYmHiHqoEa3ED1Tbpue5GHmoUmTp8PtO4YbczthtY155Rt6DmWhjxMLXBF1Bcidagxljmp/7xtAzEHXLw=="
+  "resolved" "https://registry.npmmirror.com/@vueuse/shared/-/shared-9.1.1.tgz"
+  "version" "9.1.1"
+  dependencies:
+    "vue-demi" "*"
 
 "csstype@^2.6.8":
   "integrity" "sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA=="
@@ -251,6 +278,11 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
+"vue-demi@*":
+  "integrity" "sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A=="
+  "resolved" "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.13.11.tgz"
+  "version" "0.13.11"
+
 "vue-router@^4.0.13":
   "integrity" "sha512-LmXrC+BkDRLak+d5xTMgUYraT3Nj0H/vCbP+7usGvIl9Viqd1UP6AsP0i69pSbn9O0dXK/xCdp4yPw21HqV9Jw=="
   "resolved" "https://registry.npmmirror.com/vue-router/-/vue-router-4.0.13.tgz"
@@ -258,7 +290,7 @@
   dependencies:
     "@vue/devtools-api" "^6.0.0"
 
-"vue@^3.0.2", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.37", "vue@3.2.37":
+"vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.2", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.37", "vue@3.2.37":
   "integrity" "sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ=="
   "resolved" "https://registry.npmmirror.com/vue/-/vue-3.2.37.tgz"
   "version" "3.2.37"
