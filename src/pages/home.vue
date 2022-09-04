@@ -1,10 +1,10 @@
 <template>
   <div>
     <!-- <h1>这是首页</h1> -->
-    <TodoListVue></TodoListVue>
+    <!-- <TodoListVue></TodoListVue>
 
-    <h1 @click="toggle">click</h1>
-    <Rate :value="score"></Rate>
+    <h1 @click="toggle">click</h1> -->
+    <Rate v-model="score"></Rate>
   </div>
 </template>
 
@@ -14,8 +14,7 @@ import Rate from "../components/Rate1.vue";
 
 import { useFullscreen } from "@vueuse/core";
 import { ref } from "vue";
-
-let score = ref(4);
-
 const { isFullscreen, enter, exit, toggle } = useFullscreen();
+
+let score = ref(3.5);
 </script>
