@@ -1,9 +1,23 @@
 <template>
-  <div>
+  <!-- <div>
     <router-link to="/">首页</router-link> |
     <router-link to="/about">关于</router-link>
-    <router-view></router-view>
-  </div>
+    <router-view v-slot="{ Component }">
+      <transition name="route" mode="out-in"> <component :is="Component" /> </transition>
+    </router-view>
+  </div> -->
+
+  <el-container>
+    <el-header>Header</el-header>
+    <el-container>
+      <el-aside width="200px">
+        <div><router-link to="/"> Home</router-link></div>
+        <div><router-link to="/about">About</router-link></div>
+      </el-aside>
+      <el-container>
+        <el-main> <router-view></router-view> </el-main>
+      </el-container> </el-container
+  ></el-container>
 </template>
 
 <script setup></script>
